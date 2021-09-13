@@ -1,1 +1,3 @@
-#include <iostream>
+#pragma once
+
+#include "images.h"
