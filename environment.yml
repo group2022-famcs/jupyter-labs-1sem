@@ -6,3 +6,5 @@ dependencies:
   - xtensor=0.23.10
   - xtensor-io=0.12.9
   - notebook=6.4.3
+  - gtest=1.10.0
+  - gmock=1.10.0

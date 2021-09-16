@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef ASSERT
+#include <stdexcept>
+
 #undef ASSERT
-#endif
 #define ASSERT(cond) if (!(cond)) { throw std::runtime_error("Assertion failed: " #cond); }
