@@ -1,5 +1,5 @@
 #pragma once
-#pragma cling load("gtest")
+#pragma cling add_library_path("gtest")
 
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
