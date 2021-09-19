@@ -195,8 +195,8 @@ _Подсказка_: разложите операцию поворота на 
 Для любой точки вещественной плоскости <img src="https://render.githubusercontent.com/render/math?math=(x, y)"/> её принадлежность множеству определяется следующим образом.
 - Возьмём два числа: <img src="https://render.githubusercontent.com/render/math?math=a_0 = 0"/> и <img src="https://render.githubusercontent.com/render/math?math=b_0 = 0"/>
 - На каждой итерации будем преобразовывать их по правилу:\
-  <img src="https://render.githubusercontent.com/render/math?math=a_{i+1} = a_i^2 - b_i^2 + x"/>\
-  <img src="https://render.githubusercontent.com/render/math?math=b_{i+1} = 2 a_i b_i + y"/>\
+  <img src="https://render.githubusercontent.com/render/math?math=a_{i%2B1} = a_i^2 - b_i^2 + x"/>\
+  <img src="https://render.githubusercontent.com/render/math?math=b_{i%2B1} = 2 a_i b_i + y"/>\
   (откуда берутся такие формулы, вы поймёте, когда пройдёте комплексные числа).
 - Если полученная последовательность ограничена (то есть существует такое <img src="https://render.githubusercontent.com/render/math?math=R"/>, что <img src="https://render.githubusercontent.com/render/math?math=\forall n : a_n^2 + b_n^2 < R^2"/>), то точка <img src="https://render.githubusercontent.com/render/math?math=(x, y)"/> принадлежит множеству, а иначе не принадлежит.
 
