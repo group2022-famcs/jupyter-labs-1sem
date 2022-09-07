@@ -49,6 +49,11 @@ std::string ReadFile(const char* filename)
     return std::string((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
 }
 
+PngImage LoadImage(const char* filename) {
+    PngImage result{ReadFile(filename)};
+    return result;
+}
+
 template <class E>
 std::string ToPngBuffer(const xt::xexpression<E>& e) {
     const char* kTmpFilename = "/tmp/xio_image.png";

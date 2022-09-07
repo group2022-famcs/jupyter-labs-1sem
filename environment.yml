@@ -8,5 +8,6 @@ dependencies:
   - xtensor=0.24.3
   - xtensor-io=0.13.0
   - notebook=6.4.10
+  - matplotlib=3.5.3
   - gtest=1.10.0
   - gmock=1.10.0
