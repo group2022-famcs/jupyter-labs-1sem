@@ -44,7 +44,7 @@ bool equals(const std::vector<T>& first, const std::vector<T>& second) {
     });
 }
 
-std::vector<double> get_reference(int index, const std::vector<double>& xs) {
+std::vector<double> getReference(int index, const std::vector<double>& xs) {
     if (index < 1 || index > 6) {
         throw std::runtime_error("Invalid function index");
     }
@@ -53,7 +53,7 @@ std::vector<double> get_reference(int index, const std::vector<double>& xs) {
 
 PngImage test(int index, const std::function<double(double)>& f) {
     const auto xs = linspace(-5, 5, 0.01);
-    std::vector<double> ref = get_reference(index, xs);
+    std::vector<double> ref = getReference(index, xs);
     std::vector<double> solution = transform(xs, f);
 
     if (equals(ref, solution)) {
